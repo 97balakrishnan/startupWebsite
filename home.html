@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head><title>startup</title></head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="home.css">
+<script src="home.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+<body onload="myMap()">
+<div id="sidebar">
+<ul>
+  <li><a href="#top">Home</a></li>
+  <li><a href="#abouts">About</a></li>
+  <li><a href="#products">Products</a></li>
+  <li><a href="#contact">Contact us</a></li>
+</ul>
+</div>
+<div id="star"><img src="star.jpg" width="41"></div>
+<div id="star1"><img src="star.jpg" width="41"></div>
+<center><h1 id="top">Star Robotics</h1></center>
+
+<div class="w3-content w3-section" style="max-width:800px">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+  <img class="mySlides" src="4.jpg" style="width:100%">
+  <img class="mySlides" src="5.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+
+<center><h3 id="abouts"> About</h3></center>
+<div class="pimg"><img src="p1.jpg" width="200"></div>
+<div class="pimg1"><img src="p2.jpg" width="170"></div>
+<div class="w3-panel w3-card-4" id="about"><p>STAR Robotics Pvt Ltd is a single window startup Solution and Services provider who can meet 
+all your robotics/automation needs. We provide engineering products solutions and consultancy 
+in the areas like robotic simulation and control, machine-vision, training, virtual reality, 
+and navigation applications. Our systems/solutions provide the customers a competitive advantage.
+ We have expertise in designing and developing customized solutions to meet 
+ your specific requirements to maximize your profit, maintain quality, 
+ reduce risk and to support your research.
+ </p>
+ 
+ </div>
+ 
+ <center><h3 id="products">Products</h3></center>
+ <div class="w3-card-4" id="i1">
+  <img src="i1.jpg" class="img1">
+  <div class="w3-container w3-center" >
+    <p>CooL Arm Manipulator ASIMoV’s manipulators(CooL Arm) are known for its modular approach of assembling and
+delivering the customer specific solutions at lightening speed. Being configurable in different ...
+	</p>
+	<center><button onclick="fn()">click to order</button>
+	</center>
+  </div> <br>
+</div>
+
+<div class="w3-card-4" id="i2">
+  <img src="i2.jpg" class="img1">
+  <div class="w3-container w3-center" >
+    <p>X-Terrabot Mobile Manipulator
+		The range of potential applications for mobile robots is enormous. 
+		It includes agricultural robotic applications, routine material transport in factories,
+		warehouses, office buildings and ho...
+	</p>
+	<center><button onclick="fn()">click to order</button></center>
+  </div>
+  <br>
+</div>
+<br>
+<div class="w3-card-4" id="i3">
+  <img src="i3.jpg" class="img1">
+  <div class="w3-container w3-center" >
+    <p>Virtual Reality Chair
+Virtual Reality environment can emulate physical presence in virtual world through 
+sensory experiences such as vision, sound, touch, smell, and 
+taste, etc. Most of the current virtual realit...
+	</p>
+	<center><button onclick="fn()">click to order</button></center>
+  </div> <br>
+  </div>
+</div>
+<div class="w3-card-4" id="i4">
+  <img src="i4.jpg" class="img1">
+  <div class="w3-container w3-center" >
+    <p>Lamarck Humanoid
+Humanoid robots are an increasingly popular platform for cognitive 
+systems research, and are proposed by some as the only means
+towards true artificial cognition. They facilitate the study o...
+	</p>
+	<center><button onclick="fn()">click to order</button></center>
+  </div> <br>
+</div>
+<br>
+<br>
+<br>
+<center><h3>Contact us</h3></center>
+<div id="contact"><pre>STAR ROBOTICS PVT LTD
+chennai Technology Innovation Hub,
+Kalavakkam
+chennai 600088,
+Tamilnadu 
+India.
+Pin-683503
+Sales: sales@starobotics.com
+General Info:info@starobotics.com
+Openings: careers@starobotics.com
+</pre>
+</div>
+<br><br><br><br>
+<center><h3>Location</h3></center>
+<div id="map" style="width:1400px;height:400px;"></div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+#i1
+{
+	margin-left:25%;
+	width: 200px;
+	background-color: #a8e6ff;
+	position: absolute;
+	padding: 10px;
+}
+#i2
+{
+	padding: 10px;
+	margin-left:55%;
+	width: 200px;
+	position: absolute;
+	background-color: #a8e6ff;
+}
+#i3
+{
+	padding: 10px;
+	margin-top: 300px;
+	margin-left:25%;
+	width: 200px;
+	position:absolute;
+	background-color: #a8e6ff;
+}
+#i4
+{
+	padding: 10px;
+	margin-top: 300px;
+	margin-left:55%;
+	width: 200px;
+	position: absolute;
+	background-color: #a8e6ff;
+}
+
+.img1
+{
+	margin-left: 20%;
+}
+
+#form1
+{
+	margin-top:700px;
+	margin-left:20%;
+	border-width:2px;
+	border-style: solid;
+}
+h2
+{
+	margin-left:10%;
+}
+#sub{
+	margin-left:30%;
+}
+#total
+{
+	
+	margin-left:20%;
+}

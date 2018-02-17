@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head><title>buy now</title></head>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<link rel="stylesheet" href="buynow.css">
+<script src="buynow.js"></script>
+<body onload="ld()">
+<form action="verify.php" method="post">
+<center><h1>ORDER PRODUCTS</h1></center>
+<div class="w3-card-4" id="i1">
+  <img src="i1.jpg" class="img1">
+  <div class="w3-container w3-center" >
+    <center>Quantity
+	<br>
+	<input type="number" name="qty1" id="qty1" min="0" onclick="tot()"></center>
+	<br>Price: 8500₹
+  </div>
+</div>
+
+<div class="w3-card-4" id="i2">
+  <img src="i2.jpg" class="img1">
+  <div class="w3-container w3-center" >
+    <center>Quantity
+	<br>
+	<input type="number" name="qty2" id="qty2" min="0" onclick="tot()"></center>
+	<br>Price: 7500₹
+  </div>
+</div>
+
+
+
+<div class="w3-card-4" id="i3">
+  <img src="i3.jpg" class="img1">
+  <div class="w3-container w3-center" >
+    <center>Quantity
+	<br>
+	<input type="number" name="qty3" id="qty3" min="0" onclick="tot()"></center>
+	<br>Price: 9800₹
+  </div>
+</div>
+
+
+
+<div class="w3-card-4" id="i4">
+  <img src="i4.jpg" class="img1">
+  <div class="w3-container w3-center" >
+    <center>Quantity
+	<br>
+	<input type="number" name="qty4" id="qty4" min="0" onclick="tot()"></center>
+	<br>Price: 5600₹
+  </div>
+</div>
+
+<div id="form1">
+<h3><div id="total"></div></h3>
+<br><br><br><br>
+<h2>Form</h2>
+<table cellpadding="10"  width="600" >
+		<tr>
+			<td>Name:</td> 
+			<td>
+				<input type="text" name="n" id="name1" onkeyup="checkName()" onclick="nameclick()" placeholder="Enter the name"/>
+				
+				<div class="errors" id="nameError"></div></td>
+		
+			</td>
+		</tr>
+		
+			
+		
+		<tr>
+			<td>
+			Date Of Birth
+			</td>
+			<td><input type="date" name="bday" id="date1" onchange="checkDate()">
+			<div class="errors" id="dateError"></div></td>
+		</tr>
+		<tr>
+			<td>Mail ID</td>
+			<td><input placeholder="a@abc.com" type="text" name="mail" id="mail"><div class="errors" id="MailErr"></div></td>
+		</tr>
+		<br>
+		<tr>
+		
+		<br><br>
+		
+		<tr>
+			<td class="ph"><i>Mobile</i></td>
+			<td>
+			<input type="text" name="mo" id="mobcode" disabled="true" value="+91" maxlength="1" size="1">
+			<input type="text" name="mob" id="mobnum" onkeyup="checkMob()" maxlength="10" size="10">
+			<div class="errors" id="MobErr"></div>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+			Address for correspondence
+			</td>
+		
+		
+		<td>
+			<textarea placeholder="Address line "name="address" id="address" rows="10" cols="50"></textarea>
+			<div class="errors" id="addError"></div>
+		</td>
+		</tr>
+	</table>
+	<br>
+	<br><br>
+	<input type="submit"/>
+</div>
+</form>
+</body>
+</html>
